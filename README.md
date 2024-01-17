@@ -35,6 +35,10 @@ A Maven Plugin for integrating Java (JUnit5) automation tests results with Xray 
         <pathToJUnitReport>${pathToJUnitReport}</pathToJUnitReport>
         <xrayClientId>${xrayClientId}</xrayClientId>
         <xrayClientSecret>${xrayClientSecret}</xrayClientSecret>
+        <customJiraFields>
+            <customfield_10051>${customfield_10051_value}</customfield_10051>
+        </customJiraFields>
+        <summary>Test Run (${customfield_10051_value}) - Automation Report (${maven.build.timestamp})</summary>
     </configuration>
     ```
 
@@ -44,7 +48,8 @@ A Maven Plugin for integrating Java (JUnit5) automation tests results with Xray 
 - `pathToJUnitReport` (default: "target/TEST-junit-jupiter.xml"): The path to the JUnit XML report file.
 - `xrayClientId` (required): The client ID for authenticating with the Xray API.
 - `xrayClientSecret` (required): The client secret for authenticating with the Xray API.
-
+- `customJiraFields`: The key where additional custom fields could be added.
+- `summary` (default: "Test Execution - Automation Tests Result (${session.request.startTime})"): The test execution summary field.
 
 3. Execute the plugin:
     ```bash
@@ -53,7 +58,7 @@ A Maven Plugin for integrating Java (JUnit5) automation tests results with Xray 
 
 ## Contributing
 
-Contributions are welcome!
+All contributions are welcome!
 
 ## License
 
