@@ -1,4 +1,4 @@
-# Xray XML-To-JSON Maven Plugin
+# Xray Junit5 Json Plugin
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
