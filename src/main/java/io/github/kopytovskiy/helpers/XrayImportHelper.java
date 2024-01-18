@@ -1,4 +1,4 @@
-package org.mk.helpers;
+package io.github.kopytovskiy.helpers;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.io.File;
 
 import static io.restassured.RestAssured.given;
-import static org.mk.misc.Constants.XRAY_BASE_URL;
+import static io.github.kopytovskiy.misc.Constants.XRAY_BASE_URL;
 
 @Slf4j
 public class XrayImportHelper {

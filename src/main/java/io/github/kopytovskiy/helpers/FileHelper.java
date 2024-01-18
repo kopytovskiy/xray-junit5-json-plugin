@@ -1,4 +1,4 @@
-package org.mk.helpers;
+package io.github.kopytovskiy.helpers;
 
 import lombok.extern.slf4j.Slf4j;
 import org.json.JSONObject;

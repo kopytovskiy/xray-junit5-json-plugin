@@ -1,13 +1,7 @@
-package org.mk.misc;
-
-import org.mk.helpers.AuthorizationHelper;
+package io.github.kopytovskiy.misc;
 
 import javax.inject.Named;
 import javax.inject.Singleton;
-
-import java.nio.file.Paths;
-
-import static org.mk.plugin.ImportResultsMojo.*;
 
 @Named
 @Singleton

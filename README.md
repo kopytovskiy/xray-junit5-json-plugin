@@ -17,7 +17,7 @@ A Maven Plugin for integrating Java (JUnit5) automation tests results with Xray 
     <build>
         <plugins>
             <plugin>
-                <groupId>com.mk</groupId>
+                <groupId>io.github.kopytovskiy</groupId>
                 <artifactId>xray-junit5-json-plugin</artifactId>
                 <version>0.0.1</version>
             </plugin>

@@ -1,4 +1,4 @@
-package org.mk.helpers;
+package io.github.kopytovskiy.helpers;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentException;

@@ -1,4 +1,4 @@
-package org.mk.plugin;
+package io.github.kopytovskiy.plugin;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.maven.plugin.AbstractMojo;
@@ -9,14 +9,12 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
 import org.json.JSONObject;
-import org.mk.helpers.AuthorizationHelper;
-import org.mk.helpers.FileHelper;
-import org.mk.helpers.XmlHelper;
-import org.mk.helpers.XrayImportHelper;
+import io.github.kopytovskiy.helpers.AuthorizationHelper;
+import io.github.kopytovskiy.helpers.FileHelper;
+import io.github.kopytovskiy.helpers.XmlHelper;
+import io.github.kopytovskiy.helpers.XrayImportHelper;
 
 import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Map;
 
 @Slf4j

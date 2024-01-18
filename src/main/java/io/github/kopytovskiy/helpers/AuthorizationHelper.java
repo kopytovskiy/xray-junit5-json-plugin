@@ -1,4 +1,4 @@
-package org.mk.helpers;
+package io.github.kopytovskiy.helpers;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.json.JSONObject;
 
 import static io.restassured.RestAssured.given;
-import static org.mk.misc.Constants.*;
+import static io.github.kopytovskiy.misc.Constants.*;
 
 @Slf4j
 public class AuthorizationHelper {
