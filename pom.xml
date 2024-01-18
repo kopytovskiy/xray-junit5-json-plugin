@@ -7,7 +7,7 @@
     <groupId>io.github.kopytovskiy</groupId>
     <artifactId>xray-junit5-json-plugin</artifactId>
     <version>0.0.1</version>
-    <packaging>jar</packaging>
+    <packaging>maven-plugin</packaging>
 
     <licenses>
         <license>
