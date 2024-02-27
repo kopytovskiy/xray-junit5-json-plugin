@@ -1,6 +1,7 @@
 package io.github.kopytovskiy.plugin;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
@@ -26,6 +27,9 @@ public class ImportResultsMojo extends AbstractMojo {
 
     @Parameter(property = "issueType", required = true)
     private String issueType;
+
+    @Parameter(property = "labels")
+    private String[] labels;
 
     @Parameter(property = "testPlanKey")
     private String testPlanKey;
@@ -55,6 +59,7 @@ public class ImportResultsMojo extends AbstractMojo {
         JSONObject resultsJiraFieldsData = new JSONObject();
         resultsJiraFieldsData.put("project", new JSONObject().put("key", projectKey));
         resultsJiraFieldsData.put("issuetype", new JSONObject().put("id", issueType));
+        resultsJiraFieldsData.put("labels", StringUtils.stripAll(labels));
 
         if (!customJiraFields.isEmpty()) {
             for (Map.Entry<String, String> customField : customJiraFields.entrySet()) {

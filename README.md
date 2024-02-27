@@ -19,7 +19,7 @@ A Maven Plugin for integrating Java (JUnit5) automation tests results with Xray 
             <plugin>
                 <groupId>io.github.kopytovskiy</groupId>
                 <artifactId>xray-junit5-json-plugin</artifactId>
-                <version>0.0.1</version>
+                <version>0.0.3</version>
             </plugin>
         </plugins>
     </build>
@@ -31,6 +31,7 @@ A Maven Plugin for integrating Java (JUnit5) automation tests results with Xray 
     <configuration>
         <projectKey>${projectKey}</projectKey>
         <issueType>${issueType}</issueType>
+        <labels>${labelsList}</labels>
         <testPlanKey>${testPlanKey}</testPlanKey>
         <pathToJUnitReport>${pathToJUnitReport}</pathToJUnitReport>
         <xrayClientId>${xrayClientId}</xrayClientId>
@@ -44,6 +45,7 @@ A Maven Plugin for integrating Java (JUnit5) automation tests results with Xray 
 
 - `projectKey` (required): The key of the Xray project (e.g. "QA").
 - `issueType` (required): The number of issue type to be created (e.g., "10007").
+- `labelsList`: The list of labels to be added to the Test Execution (e.g., "Automation, API").
 - `testPlanKey`: The key of the Xray test plan. If not provided, the Test Execution will be **not** linked to any.
 - `pathToJUnitReport` (default: "target/TEST-junit-jupiter.xml"): The path to the JUnit XML report file.
 - `xrayClientId` (required): The client ID for authenticating with the Xray API.
